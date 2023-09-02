@@ -11,5 +11,8 @@ step0: step0.c
 step1: step1.c
 	$(CC) $< -o $@ $(CFLAGS)
 
+step2: step2.c
+	$(CC) $< -o $@ $(CFLAGS)
+
 clean:
 	@rm -v $(shell find . -type f -name 'step?') 2>/dev/null
