@@ -3,7 +3,13 @@ CFLAGS 	:= -std=c17 -Wall -Wextra -Wpedantic -pedantic -Wundef -Wshadow -Walloca
 		   -Wswitch-default -Wswitch-enum -Wconversion -Wimplicit-fallthrough -Wunreachable-code -Wformat=2 -Wparentheses \
 		   -Wmisleading-indentation
 
-.PHONY: step0
+.PHONY: clean step0 step1
 
 step0: step0.c
-	$(CC) step0.c -o $@ $(CFLAGS)
+	$(CC) $< -o $@ $(CFLAGS)
+
+step1: step1.c
+	$(CC) $< -o $@ $(CFLAGS)
+
+clean:
+	@rm -v $(shell find . -type f -name 'step?') 2>/dev/null
