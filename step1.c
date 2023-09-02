@@ -21,7 +21,8 @@ int main(int argc, char **argv)
 {
     // clang-format off
     struct argp_option options[] = {
-        [0] = {.name = NULL, .key = 'd', .arg = NULL, .flags = 0, .doc = "Show a dot on the screen", .group = 0}
+        [0] = {.name = NULL, .key = 'd', .arg = NULL, .flags = 0, .doc = "Show a dot on the screen", .group = 0},
+        {0}
     };
     // clang-format on
 
