@@ -35,5 +35,8 @@ step8: step8.c
 step9: step9.c
 	$(CC) $< -o $@ $(CFLAGS)
 
+step10: step10.c
+	$(CC) $< -o $@ $(CFLAGS)
+
 clean:
-	@rm -v $(shell find . -type f -name 'step?') 2>/dev/null
+	@rm -v $(shell find . -type f -name 'step?' -or -name 'step??') 2>/dev/null
