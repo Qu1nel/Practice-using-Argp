@@ -29,5 +29,8 @@ step6: step6.c
 step7: step7.c
 	$(CC) $< -o $@ $(CFLAGS)
 
+step8: step8.c
+	$(CC) $< -o $@ $(CFLAGS)
+
 clean:
 	@rm -v $(shell find . -type f -name 'step?') 2>/dev/null
