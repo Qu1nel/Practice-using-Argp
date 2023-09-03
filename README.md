@@ -20,6 +20,13 @@ Usage: step3 [OPTION...]
       --usage               Give a short usage message
 ```
 
+## Note 2
+
+This is normal Argp behaviour: options are always parsed before arguments.
+
+> If this is unacceptable you can make Argp to honour the order of your command-line options by passing ARGP_IN_ORDER
+> into the bitwise flags parameter (the 4th parameter) of the argp_parse function
+
 ---
 
 Repository with examples of using the argp.h library by the book `Step-by-Step into Argp`[^1].
