@@ -1,4 +1,4 @@
-CC  	:= gcc
+CC  	:= clang
 CFLAGS 	:= -std=c17 -Wall -Wextra -Wpedantic -pedantic -Wundef -Wshadow -Walloca -Wvla -Wfloat-equal -Wstrict-prototypes \
 		   -Wswitch-default -Wswitch-enum -Wconversion -Wimplicit-fallthrough -Wunreachable-code -Wformat=2 -Wparentheses \
 		   -Wmisleading-indentation
